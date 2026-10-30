@@ -1,0 +1,10 @@
+# The site lives in the "KINGQAYUM CRM" subfolder, so publish that folder
+# instead of the repository root (which has no index.html).
+[build]
+  publish = "KINGQAYUM CRM"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+    Service-Worker-Allowed = "/"
